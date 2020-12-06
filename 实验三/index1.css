@@ -1,0 +1,72 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  /* body不能直接设置背景图透明du */
+  /* opacity: 0.5;  */
+  /* 设置透明度 */
+  padding: 0;
+  margin: -1%;
+  width: 101vw;
+  height: 97vh;
+  position: relative;
+  background: url(./static/20200222215816_hjwym.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cover {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.overflow {
+  width: 500px;
+  height: 400px;
+  margin-right: 10px;
+  background: #fff;
+  overflow-y: scroll;
+  font-style: normal;
+  font-family: cursive;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: seashell;
+}
+
+.overflow button {
+  position: fixed;
+  right: 20px;
+  bottom: 13px;
+}
+
+.center h3 {
+  /* width: 20vw; */
+  padding-top: 0;
+  font-size: 52px;
+  /* color: #fff; */
+}
+
+.back {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  text-decoration: none;
+  background-color: beige;
+  font-size: xx-large;
+  border: 2px solid black;
+  border-radius: 25%;
+}

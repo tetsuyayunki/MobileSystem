@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link type="text/css" rel="styleSheet" href="./index.css" />
+  <script>
+    var arr = new Array(3);
+    arr[0] = ["广东", "广州", "深圳", "佛山"];
+    arr[1] = ["湖北", "荆州", "武汉", "赤壁"];
+    arr[2] = ['四川', '成都市', '自贡市', '攀枝花市', '泸州市', '德阳市', '绵阳市']
+
+    function choose(val) {
+      var city = document.getElementById("city");
+      var cityOp = city.getElementsByTagName("option");
+      city.disabled = false;
+      for (var i = 0; i < cityOp.length; i++) {
+        var op = cityOp[i];
+        city.removeChild(op);
+        i--;
+      }
+
+      for (var i = 0; i < arr.length; i++) {
+        var arr1 = arr[i];
+        var firstVal = arr1[0];
+        if (firstVal == val) {
+          for (var j = 1; j < arr1.length; j++) {
+            var value = arr1[j];
+            var optionl = document.createElement("option");
+            var textl = document.createTextNode(value);
+            optionl.appendChild(textl);
+            city.appendChild(optionl);
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="all">
+    <form class="list" action="#" method="post">
+      <h2>传智播客学员档案</h2>
+      <p><input type="text" placeholder="本人真实姓名" class="txt"></p>
+      <p><input type="text" name="" id="" placeholder="请填写实际年龄" class="age"></p>
+      <p class="choose">
+        <label><input type="radio" name="sex" value="male" checked>男</label>
+        <label><input type="radio" name="sex" value="female">女</label>
+      </p>
+      <p class="choose">
+        <label><input type="checkbox">传智老学员</label>
+        <label><input type="checkbox">朋友推荐</label>
+        <label><input type="checkbox">视频教程</label>
+        <label><input type="checkbox">CSDN论坛</label>
+      </p>
+      <p>
+        <select name="" id="" class="course">
+          <option>JAVA就业班</option>
+          <option value="" selected='selected'>网页平面设计UI设计就业班</option>
+          <option>IOS就业班</option>
+        </select>
+      </p>
+      <p class="money_box">
+        <input type="text" placeholder="工作薪资" class="money"><span>元/月（收入）</span>
+      </p>
+      <p>
+        <textarea cols="50" rows="5" class="message" placeholder='请简述你有没有基础，以及为什么选择来传智播客学习？'></textarea>
+      </p>
+      <p>
+        <select id="province" onchange="choose(this.value)">
+          <option value="0">--请选择省--</option>
+          <option value="广东">广东</option>
+          <option value="湖北">湖北</option>
+          <option value="四川">四川</option>
+        </select>
+
+        <select id="city" disabled="disabled">
+          <option value="0">--请选择市--</option>
+        </select>
+      </p>
+      <p><input type="submit" class="btn" value="提交"></p>
+    </form>
+  </div>
+  <div class="second">
+    <div class="left">
+      <a href="#" class="one"></a>
+      <a href="#" class="two"></a>
+      <a href="#" class="three"></a>
+      <a href="#" class="four"></a>
+    </div>
+    <div class="right">
+      <h3>两只老虎</h3>
+      <!-- <p class="second_txt">及时、迅速、精准、便捷</p> -->
+      <audio controls>
+        <source src="./宝宝巴士 - 两只老虎.mp3" type="audio/mpeg">
+        您的浏览器不支持 audio 元素。
+      </audio>
+      <div class="overflow">
+        <p>两只老虎，两只老虎，</p>
+        <p>跑得快，跑得快，</p>
+        <p>一只没有耳朵，</p>
+        <p>一只没有尾巴，</p>
+        <p>真奇怪！真奇怪！。</p>
+        <p>两只老虎，两只老虎，</p>
+        <p>跑得快，跑得快，</p>
+        <p>一只没有耳朵，</p>
+        <p>一只没有尾巴，</p>
+        <p>真奇怪！真奇怪！</p>
+      </div>
+      <!-- <img src="./汽车.png" alt=""> -->
+    </div>
+  </div>
+
+
+</body>
+
+</html>

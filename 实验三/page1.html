@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>分页面1</title>
+  <link rel="stylesheet" href="./index1.css" type="text/css">
+  <script src="./jquery-1.11.1.js"></script>
+  <script>
+    function gotop() {
+      $('.overflow').animate({scrollTop:'0px'},100) // jq的animate方法
+    }
+  </script>
+</head>
+
+<body>
+  <!-- 1.图像为背景
+       2.音乐播放器并且居中
+       3.歌词展示overflow框
+       4.返回按钮（返回页面？返回首部？）
+  -->
+  <div class="body">
+    <div class="cover">
+      <a href="./index.html" class="back">返回</a>
+      <div class="center">
+        <h3>两只老虎</h3>
+        <audio controls>
+          <source src="./static/宝宝巴士 - 两只老虎.mp3" type="audio/mpeg">
+          您的浏览器不支持 audio 元素。
+        </audio>
+        <div class="overflow">
+          <button onclick="gotop()">返回顶部</button>
+          <p>两只老虎，两只老虎，</p>
+          <p>跑得快，跑得快，</p>
+          <p>一只没有耳朵，</p>
+          <p>一只没有尾巴，</p>
+          <p>真奇怪！真奇怪！。</p>
+          <p>两只老虎，两只老虎，</p>
+          <p>跑得快，跑得快，</p>
+          <p>一只没有耳朵，</p>
+          <p>一只没有尾巴，</p>
+          <p>真奇怪！真奇怪！</p>
+        </div>
+        <!-- <img src="./汽车.png" alt=""> -->
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

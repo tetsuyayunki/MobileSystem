@@ -1,0 +1,43 @@
+/* 使用flex布局 */
+
+form {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.main_div {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* background-color: blueviolet; */
+}
+
+.div1,
+.div2,
+.div3,
+.div4 {
+  width: 20vw;
+  height: 20vw;
+
+}
+
+.div1 {
+  background: url('../static/1.jpeg');
+  background-size: 20vw 20vw;
+}
+
+.div2 {
+  background: url('../static/2.jpeg');
+  background-size: 20vw 20vw;
+}
+
+.div3 {
+  background: url('../static/3.jpeg');
+  background-size: 20vw 20vw;
+}
+
+.div4 {
+  background: url('../static/4.jpeg');
+  background-size: 20vw 20vw;
+}

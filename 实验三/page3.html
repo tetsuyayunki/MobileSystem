@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page3</title>
+  <link rel="stylesheet" href="./color.css">
+  <script src="./static/jquery-1.11.1.js"></script>
+</head>
+
+<body>
+  <!-- @copyright 3218004759 -->
+  <!-- 参考小网站例子，制作自己的网站，比如失物招领，同乡会等。更换背景、图片、音乐、动画 -->
+  <div id="main">
+    <header>
+      <h1 id="text1">MyBlog by 3218004759</h1>
+      <h1 id="text2">MyBlog by 3218004759</h1>
+    </header>
+    <aside>
+      <img src="./static/b8e8cb96ab8c05ee67b4a543988eed8b.jpg" alt="" style="    width: 150px;
+      left: 5px;
+      position: relative;
+      border: 0;">
+      <nav>
+        <!-- 导航栏 -->
+        <ul class="nav">
+          <!-- 跳转多个页面，共同的部分重复，不易维护，改成js控制内容显示 -->
+          <li id="content1"><a href="">首页</a></li>
+          <li id="content2"><a href="">flash动画</a></li>
+          <li id="content3"><a href="">短片欣赏</a></li>
+          <li id="content4"><a href="">音乐欣赏</a></li>
+          <li id="content5"><a href="">留言板</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <article class="content1">
+      <h1>欢迎来到我的博客</h1>
+      <section>
+        <p>姓名：王菲</p>
+        <p>学号：3218004759</p>
+        <p>兴趣爱好：敲代码</p>
+      </section>
+      <img src="static/11.jpg" alt="">
+      <img src="static/22.jpg" alt="">
+      <img src="static/33.jpg" alt="">
+    </article>
+    <article class="content2">
+      <div class="text-bg">
+        <h1>flash动画</h1>
+      </div>
+
+      <embed src="static/dog.swf" width="330" height="170" style="margin-left: 6vw;">
+    </article>
+    <article class="content3">
+      <div class="text-bg">
+        <h1>短片欣赏</h1>
+      </div>
+      <video src="./static/movie.ogv" controls="controls">
+        您的浏览器不支持 video 标签。
+      </video>
+    </article>
+    <article class="content4">
+      <div class="text-bg">
+        <h1>音乐欣赏</h1>
+      </div>
+      <div class="center">
+        <p>请按下播放键聆听第一首音乐</p>
+        <div><audio controls>
+            <source src="./static/宝宝巴士 - 两只老虎.mp3" type="audio/mpeg">
+            您的浏览器不支持 audio 元素。
+          </audio></div>
+        <p>请按下播放键聆听第一首音乐</p>
+        <div><audio controls>
+            <source src="./static/宝宝巴士 - 两只老虎.mp3" type="audio/mpeg">
+            您的浏览器不支持 audio 元素。
+          </audio></div>
+      </div>
+
+    </article>
+
+    <article class="content5">
+      <div class="text-bg">
+        <h1>留言板</h1>
+      </div>
+      <form method="post" enctype="text/plain" action="">
+        <p>姓名<input type="text" name="" size="20">
+          <p>e-mail<input type="text" name="e-mail" size="30">
+            <p>留言内容</p>
+            <p><textarea rows="5" name="" cols="30"></textarea>
+              <p align="center">
+                <!-- <input type="submit" value="提交"> -->
+                <input type="submit" value="提交">
+                <input type="reset" value="重写">
+      </form>
+    </article>
+    <footer>welcome to my blog</footer>
+  </div>
+</body>
+<script src="./index3.js"></script>
+
+</html>

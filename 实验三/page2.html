@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面2</title>
+  <link rel="stylesheet" href="./index.css">
+  <!-- <script src="https://code.jquery.com/jquery-3.4.0.js"></script> -->
+  <script src="./static/jquery-1.11.1.js"></script>
+  <script>
+    window.onload = function () {
+      var img = document.getElementById("box");
+      img.onmouseover = function () {
+        img.src = "./static/ab645639c30ec87128932a3214d00ac8.jpeg";
+      }
+
+      var img = document.getElementById("box");
+      img.onmouseout = function () {
+        this.src = "./static/b8e8cb96ab8c05ee67b4a543988eed8b.jpg";
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="all">
+    <img id="box" src="./static/b8e8cb96ab8c05ee67b4a543988eed8b.jpg"
+      style="cursor: pointer;border: 1px solid #ccc; width: 20vw;" />
+    <div class="slideshow">
+      <!-- 轮播图 -->
+      <div class="slide_last"><img src="./static/slide_last.png"></div>
+      <div class="slide_next"><img src="./static/slide_next.png"></div>
+      <ul class="slideimg">
+        <li class="list1"><img src="" alt='' class="simg">
+          <div></div>
+        </li>
+        <li class="list2"><img src="" alt="" class="simg">
+          <div></div>
+        </li>
+        <li class="list3"><img src="" alt="" class="simg">
+          <div></div>
+        </li>
+        <li class="list4"><img src="" alt="" class="simg">
+          <div></div>
+        </li>
+        <li class="list5"><img src="" alt="" class="simg">
+          <div></div>
+        </li>
+        <li class="list6"><img src="" alt="" class="simg">
+          <div></div>
+        </li>
+      </ul>
+
+      <div class="slide_btngroups">
+        <span class="slide_btn"> </span>
+        <span class="slide_btn"> </span>
+        <span class="slide_btn"> </span>
+        <span class="slide_btn"> </span>
+        <span class="slide_btn"> </span>
+        <span class="slide_btn"> </span>
+      </div>
+    </div>
+    <div class="timeSelector" style="text-align: center;">
+      <p class="time" style="padding-top: 5vw;"></p>
+    </div>
+    <div class="bottom">
+      <!-- 底部背景平铺，居中实现视频播放器 -->
+      <video src="./static/movie.ogv" controls="controls">
+        您的浏览器不支持 video 标签。
+        </video>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+
+</html>

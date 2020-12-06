@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      display: inline;
+      border: 1px solid cadetblue;
+      width: 10vw;
+    }
+
+    a {
+      width: 10vw;
+      padding: 5px;
+    }
+
+    /* 伪类 */
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      color: cadetblue;
+
+    }
+
+    img {
+      width: 30vw;
+      display: inline;
+    }
+
+    .wrapper {
+      width: 90vw;
+      background: #f3f3f3;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 25% 25% 25% 25%;
+    }
+
+    .text {
+      margin-top: 20vh;
+    }
+
+    .totop {
+      position: fixed;
+      z-index: 10;
+      width: 7rem;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <ul id="top">
+    <li><a href="#first">网站前端</a></li>
+    <li><a href="#second"">HTML</a></li>
+    <li><a href=" #third">CSS</a></li>
+    <li><a href="#forth">JavaScript</a></li>
+  </ul>
+  <img src='./static/mao.jpg' style='width:70vw; margin-left:15vw'>
+  <div class="wrapper">
+    <div>
+      <h1 id="first">网站前端</h1>
+      <img src="./static/11.jpg">
+    </div>
+    <div style="font-size: larger;" class="text">
+      前端技术一般分为前端设计和前端开发，前端设计一般可以理解为网站的视觉设计，前端开发则是网站的前台代码实现，包括基本的HTML和CSS以及JavaScript/ajax，最新的高级版本HTML5、CSS3，以及SVG等。
+    </div>
+    <div>
+      <h1 id="second">HTML</h1>
+      <img src="./static/33cd49a7573996d1b52b2b9b9df8ab78.png">
+    </div>
+    <div style="font-size: larger;" class="text">
+      指的是超文本标记语言 (Hyper Text Markup Language)，这个也是我们网页最常用普通的语言了，经历了多个版本的发展，已经发展到5.0版了，得力于W3C建立的标准和规范，已普遍升级到了XHTML，XHTML
+      指可扩展超文本标签语言（EXtensible HyperText Markup Language）， XHTML 于2000年的1月26日成为 W3C 标准，是更严格更纯净的 HTML 代码，XHTML 的目标是取代
+      HTML。XHTML 与 HTML 4.01 几乎是相同的，XHTML 是作为一种 XML 应用被重新定义的 HTML，是一个 W3C 标准。W3C 将 XHTML 定义为最新的HTML版本。所有新的浏览器都支持 XHTML。
+    </div>
+    <div>
+      <h1 id="third">CSS</h1>
+      <img src="./static/de8e87703cd6796ea37b3a10c655038f.jpg">
+    </div>
+    <div style="font-size: larger;" class="text">
+      级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style
+      Sheet）”，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。通过设立样式表，可以统一地控制HTML中各标志的显示属性。级联样式表可以使人更能有效地控制网页外观。使用级联样式表，可以扩充精确指定网页元素位置，外观以及创建特殊效果的能力。
+    </div>
+    <div>
+      <h1 id="forth">JavaScript</h1>
+      <img src="./static/c95f4be597679260c444a4146d1b108f.jpg">
+    </div>
+    <div style="font-size: larger;" class="text">
+      是一种由Netscape的LiveScript发展而来的原型化继承的面向对象的动态类型的区分大小写的客户端脚本语言，主要目的是为了解决服务器端语言，比如Perl，遗留的速度问题，为客户提供更流畅的浏览效果。当时服务端需要对数据进行验证，由于网络速度相当缓慢，只有28.8kbps，验证步骤浪费的时间太多。于是Netscape的浏览器Navigator加入了Javascript，提供了数据验证的基本功能。
+    </div>
+  </div>
+  <a href="#top"><img src="./static/上.png" class="totop"></a>
+
+
+  </div>
+
+</body>
+
+</html>
