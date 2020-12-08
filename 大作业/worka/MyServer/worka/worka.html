@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="3218004759">
+  <title>HTML表单</title>
+  <!-- @copyright 3218004759 王菲 -->
+  <link rel="stylesheet" href="./index.css">
+  <script>
+    var arr = new Array(3);
+    arr[0] = ["广东", "广州", "深圳", "佛山"];
+    arr[1] = ["湖北", "荆州", "武汉", "赤壁"];
+    arr[2] = ['四川', '成都市', '自贡市', '攀枝花市', '泸州市', '德阳市', '绵阳市']
+
+    function choose(val) {
+      var city = document.getElementById("city");
+      var cityOp = city.getElementsByTagName("option");
+      city.disabled = false;
+      for (var i = 0; i < cityOp.length; i++) {
+        var op = cityOp[i];
+        city.removeChild(op);
+        i--;
+      }
+
+      for (var i = 0; i < arr.length; i++) {
+        var arr1 = arr[i];
+        var firstVal = arr1[0];
+        if (firstVal == val) {
+          for (var j = 1; j < arr1.length; j++) {
+            var value = arr1[j];
+            var optionl = document.createElement("option");
+            var textl = document.createTextNode(value);
+            optionl.appendChild(textl);
+            city.appendChild(optionl);
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form action="http://localhost/MyServer/Service.php" method="POST">
+    <div class="main_div">
+      <div class="div1">
+        <p><label>用户名：</label><input type="text" name="name"></p>
+        <p><label>密码：</label><input type="password" name="password"></p>
+        <p><label for="">再次输入密码:</label><input type="password" name="passwords"></p>
+      </div>
+      <div class="div2">
+        <label for="">地址</label>
+        <select id="province" onchange="choose(this.value)">
+          <option value="0">--请选择省--</option>
+          <option value="广东">广东</option>
+          <option value="湖北">湖北</option>
+          <option value="四川">四川</option>
+        </select>
+
+        <select id="city" disabled="disabled">
+          <option value="0">--请选择市--</option>
+        </select>
+      </div>
+      <div class="div3">
+        <p>爱好</p>
+        游泳<input type="checkbox" name="" id="">
+        乒乓<input type="checkbox" name="" id="">
+        舞蹈<input type="checkbox" name="" id="">
+        动漫<input type="checkbox" name="" id="">
+        音乐<input type="checkbox" name="" id="">
+      </div>
+      <div class="div4">
+        <p>留言</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <input type="submit"" value="提交" style="margin-left: 20vw;">
+    </div>
+
+
+  </form>
+</body>
+
+</html>
