@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作业c</title>
+  <!-- @copyright 3218004759 王菲 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 引入 jQuery Mobile 样式 -->
+  <link rel="stylesheet" href="../static/jquery.mobile-1.4.0.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 jQuery 库 -->
+  <script src="../static/jquery-1.11.1.js"></script>
+  <!-- 引入 jQuery Mobile 库 -->
+  <script src="../static/jquery.mobile-1.4.0.min.js"></script>
+
+</head>
+
+<body>
+
+  <body>
+    <div data-role="page" id="pageone">
+      <div data-role="header" class="header">
+        <h1>广工新闻</h1>
+      </div>
+      <div data-role="content" class="ui-content">
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="https://im.qq.com/"><img src="./images/qq.png" alt="" style="width: 40vw;" class="img1"></a>
+
+            <a href="https://jsjxy.gdut.edu.cn/"><img src="./images/计算机.png" alt="" style="width: 40vw;"
+                class="img2"></a>
+
+          </div>
+          <div class="ui-block-b">
+            <a href="https://www.toutiao.com/"><img src="./images/技术服务.png" alt="" style="width: 40vw;"
+                class="img3"></a>
+            <a href="https://www.taobao.com/"><img src="./images/淘宝.png" alt="" style="width: 40vw;" class="img4"></a>
+          </div>
+        </div>
+
+        <a href="#pagetwo" class="ui-btn ui-corner-all ui-shadow">下一页<br></a>
+      </div>
+      <div data-role="footer" class="footer">
+        <h1>footer</h1>
+      </div>
+    </div>
+    <div data-role="page" id="pagetwo">
+      <div data-role="header" class="header">
+        <h1>广工新闻</h1>
+        <a href="#pageone" data-icon="arrow-l">返回</a>
+      </div>
+      <div data-role="content" class="ui-content">
+        <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+          <thead>
+            <tr>
+              <th data-priority="1">学号</th>
+              <th data-priority="1">名字</th>
+              <th data-priority="1">学院</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>王菲</td>
+              <td>3218004759</td>
+              <td>计算机</td>
+            </tr>
+            <tr>
+              <td>王菲</td>
+              <td>3218004759</td>
+              <td>计算机</td>
+            </tr>
+            <tr>
+              <td>王菲</td>
+              <td>3218004759</td>
+              <td>计算机</td>
+
+            </tr>
+
+          </tbody>
+        </table>
+        <div data-role="navbar" class="next" data-iconpos="right"><a href="#third" data-icon="arrow-r">页面二</a></div>
+
+      </div>
+      <div data-role="footer" class="footer">
+        <h1>footer</h1>
+      </div>
+    </div>
+    <div data-role="page" id="third">
+      <div data-role="header" class="header">
+        <h1 style="width: 100%; margin: 0 auto; color: tomato;">李白《行路难•其一》</h1>
+      </div>
+      <div data-role="content" class="ui-content">
+        <img src="./images/22.jpg" alt="">
+        <pre>
+          金樽清酒斗十千，玉盘珍羞直万钱。
+          停杯投箸不能食，拔剑四顾心茫然。
+          欲渡黄河冰塞川，将登太行雪满山。
+          闲来垂钓碧溪上，忽复乘舟梦日边。
+          行路难，行路难，多歧路，今安在？
+          长风破浪会有时，直挂云帆济沧海。
+
+          </pre>
+      </div>
+      <div data-role="footer" class="footer">
+        <h1>长风破浪会有时，直挂云帆济沧海。</h1>
+      </div>
+    </div>
+  </body>
+</body>
+
+</html>

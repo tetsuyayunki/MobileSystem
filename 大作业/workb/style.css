@@ -1,0 +1,244 @@
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  /* background: rgba(0, 0, 0, 0.8); */
+  background: wheat;
+}
+
+.navbar {
+  width: 800px;
+  height: 42px;
+  background: white url("images/wifi.png") right center no-repeat;
+  margin: 12px auto;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid slategray;
+}
+
+.navbar ul {
+  list-style: none;
+  position: relative;
+  background: aqua;
+  z-index: 10;
+}
+
+.navbar li {
+  float: left;
+  width: 83px;
+  height: 42px;
+  text-align: center;
+  font: 500 16px/42px "simsun";
+  cursor: pointer;
+}
+
+.secondUl {
+  /* position: absolute; */
+  display: none;
+  /* float: none !important; */
+  /* background-color: white; */
+}
+
+.secondUl li:hover {
+  background-color: #7dc5eb;
+}
+
+.navbar span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 83px;
+  height: 42px;
+  background: url("images/cloud.png") no-repeat;
+  background-size: 83px 42px;
+}
+
+.wrap a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'semibold';
+  src: url(../static/Semibold.ttf);
+}
+
+.photos {
+  width: 800px;
+  margin: 20px auto;
+
+}
+
+.photos .span {
+  font-family: 'semibold';
+  color: indianred;
+  font-size: 100px;
+}
+
+.photos .span:nth-child(1) {
+  position: relative;
+  left: 73px;
+  top: 56px;
+}
+
+.photos .span:nth-child(2) {
+  position: relative;
+  left: 150px;
+  top: 80px;
+}
+
+.photos .main_pic {
+  width: 600px;
+  height: 400px;
+  background: url(./images/4576de040a2e698bf48eda307ae77d79.jpg);
+  border-radius: 7%;
+  float: left;
+}
+
+.photos .sider {
+  width: 200px;
+  height: 400px;
+  float: right;
+}
+
+.photos .sider li {
+  margin: 0px 0 0 20px;
+  width: 139px;
+  height: 91px;
+  background-color: burlywood;
+  border: 1px solid brown;
+  padding: 20px;
+  font-family: 'semibold';
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.photos .slider {
+  background-color: white;
+  height: 220px;
+  clear: both;
+  /* 浮动元素后的有内容元素添加clear 清除浮动*/
+  top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.photos .slider h1 {
+  color: #45afe7;
+  padding: 10px;
+}
+
+
+.screen {
+  position: relative;
+}
+
+.screen li {
+  width: 300px;
+  height: 150px;
+  margin: 0 10px 0 10px;
+  /* overflow: hidden; */
+  float: left;
+  border: 2px solid slategray;
+  transition: all 0.3s ease;
+}
+
+.screen ul {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 3000px;
+  overflow: hidden;
+  /* transition: all 0.5s ease; */
+}
+
+#all ol {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
+#all ol li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#all ol li.current {
+  background: yellow;
+}
+
+.marquee {
+  width: 800px;
+  margin: 30px auto;
+}
+
+/* 放大镜样式 */
+
+.glass_fa {
+  width: 800px;
+  margin: 20px auto;
+}
+.glass {
+  width: 350px;
+  height: 350px;
+  /* margin:100px; */
+  border: 1px solid #ccc;
+  position: relative;
+}
+.glass .big {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 400px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: none;
+}
+.glass .big img{
+  width: 800px;
+  height: 800px;
+}
+.glass .mask {
+  width: 175px;
+  height: 175px;
+  background: rgba(255, 255, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: move;
+  display: none;
+  z-index: 10;
+}
+.glass .small {
+  position: relative;
+}
+.glass .small img {
+  width: 350px;
+  height: 350px;
+}
+.glass img {
+  vertical-align: top;
+}

@@ -3,68 +3,17 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
-    <style>
-        a {
-            text-decoration: none;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background: rgba(0, 0, 0, 0.8);
-        }
-        .box {
-            width: 800px;
-            height: 42px;
-            background: #fff url("images/wifi.png") right center no-repeat;
-            margin: 12px auto;
-            border-radius: 8px;
-            position: relative;
-        }
-        ul {
-            list-style: none;
-            position: relative;
-        }
-        li {
-            float: left;
-            width: 83px;
-            height: 42px;
-            text-align: center;
-            font: 500 16px/42px "simsun";
-            cursor: pointer;
-        }
-        .wrap ul li ul {
-            position: absolute;
-            display: none;
-            float: none !important;
-        }
-        span {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 83px;
-            height: 42px;
-            background: url("images/cloud.gif") no-repeat;
-        }
-        .wrap a {
-            display: block;
-            height: 30px;
-            width: 100px;
-            text-decoration: none;
-            color: #000;
-            line-height: 30px;
-            text-align: center;
-        }
-    </style>
+    <title>作业b----3218004759</title>
+    <!-- @copyright 3218004759 王菲 -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="rotate.css">
     <script src="../static/jquery-1.11.1.js"></script>
 
 </head>
 
 <body>
-    <div class="box">
+    <div class="navbar">
         <span></span>
         <div class="wrap">
             <ul>
@@ -73,8 +22,8 @@
                 <li class=".li">师资力量</li>
                 <li class=".li">企业文化</li>
                 <li class=".li second">
-                    <a  href="javascript:void(0);">招聘信息</a>
-                    <ul>
+                    <a href="javascript:void(0);">招聘信息</a>
+                    <ul class="secondUl">
                         <li><a href="javascript:void(0);">二级菜单1</a></li>
                         <li><a href="javascript:void(0);">二级菜单2</a></li>
                         <li><a href="javascript:void(0);">二级菜单3</a></li>
@@ -87,7 +36,135 @@
         </div>
 
     </div>
+    <div class="photos">
+        <div class="main_pic">
+            <!-- 此处应有背景 -->
+            <div class="span">众志成城</div>
+            <div class="span">勇抗病毒</div>
+        </div>
+        <div class="sider">
+            <ul>
+                <li id="li1">抗疫精神是在抗击新冠肺炎中形成的众志成城抗击疫情的精神</li>
+                <li id="li2">一是万众一心、同舟共济的守望相助精神。</li>
+                <li id="li3">二是闻令而动、雷厉风行的英勇战斗精神。</li>
+            </ul>
+        </div>
+        <div class="slider" id="all">
+            <h1>快乐的广东工业大学计算机学院</h1>
+            <div class="screen" id="screen">
+                <ul id="ul">
+                    <li><img src="images/1.jpg" width="300" height="150" /></li>
+                    <li><img src="images/2.jpg" width="300" height="150" /></li>
+                    <li><img src="images/3.jpg" width="300" height="150" /></li>
+                    <li><img src="images/4.jpg" width="300" height="150" /></li>
+                    <li><img src="images/5.jpg" width="300" height="150" /></li>
+                    <li><img src="images/6.jpg" width='300' height='150' /></li>
+                </ul>
+                <ol>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="marquee">
+        <marquee width=800 behavior=alternate direction=left align=middle>这是一个跑马灯！</marquee>
+    </div>
+    <div class="table">
+        <div class="table_wrap">
+            <div>
+                <input type="button" value="添加课程" id="j_btnAddData" class="btnAdd" />
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <!-- <th><input type="checkbox" id="j_cbAll" /></th> -->
+                        <th>课程名称</th>
+                        <th>所属学院</th>
+                        <th>已学会</th>
+                    </tr>
+                </thead>
+                <tbody id="j_tb">
+                    <tr>
+                        <!-- <td><input type="checkbox"/></td> -->
+                        <td>JavaScript</td>
+                        <td>计算机学院</td>
+                        <td><a href="javascript:void(0);" class="get">GET</a></td>
+                    </tr>
+                    <tr>
+                        <!-- <td><input type="checkbox"/></td> -->
+                        <td>css</td>
+                        <td>计算机学院</td>
+                        <td><a href="javascript:void(0);" class="get">GET</a></td>
+                    </tr>
+                    <tr>
+                        <!-- <td><input type="checkbox"/></td> -->
+                        <td>html</td>
+                        <td>计算机学院</td>
+                        <td><a href="javascript:void(0);" class="get">GET</a></td>
+                    </tr>
+                    <tr>
+                        <!-- <td><input type="checkbox"/></td> -->
+                        <td>jQuery</td>
+                        <td>计算机学院</td>
+                        <td><a href="javascript:void(0);" class="get">GET</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="j_mask" class="mask"></div>
+        <div id="j_formAdd" class="form-add">
+            <div class="form-add-title">
+                <span>添加课程</span>
+                <div id="j_hideFormAdd">x</div>
+            </div>
+            <div class="form-item">
+                <label class="lb" for="j_txtLesson">课程名称：</label>
+                <input class="txt" type="text" id="j_txtLesson" placeholder="请输入课程名称">
+            </div>
+            <div class="form-item">
+                <label class="lb" for="j_txtBelSch">所属学院：</label>
+                <input class="txt" type="text" id="j_txtBelSch" value="计算机学院">
+            </div>
+            <div class="form-submit">
+                <input type="button" value="添加" id="j_btnAdd">
+            </div>
+        </div>
+    </div>
+    <div class="glass_fa">
+        <div class="glass">
+            <!-- 放大镜 -->
+            <div class="small">
+                <img src="images/0f3ce1f5e03fc734535ba59c21afc339.jpg" alt="" />
+                <div class="mask"></div>
+            </div>
+            <div class="big">
+                <img src="images/0f3ce1f5e03fc734535ba59c21afc339.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="rotate_slider">
+        <div class="rotate_wrap" id="rotate_wrap">
+            <div class="rotate_slide" id="rotate_slide">
+                <ul>
+                    <!--五张图片-->
+                    <li><a href="#"><img src="images/1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="images/6.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="images/3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="images/4.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="images/5.jpg" alt="" /></a></li>
+                </ul>
+                <!--左右切换按钮-->
+                <div class="arrow" id="arrow">
+                    <a href="javascript:void(0);" class="prev"></a>
+                    <a href="javascript:void(0);" class="next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 1200px; height: 50px;"></div>
 </body>
 <script src="./index.js"></script>
+<script src="./addTable.js"></script>
+<script src="./rotate.js"></script>
 
 </html>
